@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Loops Exercise</title>
+  </head>
+  <body>
+    <h1>JavaScript Loops Exercise</h1>
+    <script>
+
+      // Create empty array
+      var links = [];
+
+      // Add items to the array
+      links[0] = {
+        name: "W3Schools",
+        logo: "http://www.w3schools.com/images/w3schools.png",
+        url: "http://www.w3schools.com/",
+        description: "W3Schools is a web developer information website, with tutorials and references relating to web development topics such as HTML, CSS, JavaScript and PHP."
+      };
+
+      links[1] = {
+        name: "Code Academy",
+        logo: "Codecademy.png",
+        url: "https://www.codecademy.com/",
+        description: "Codecademy is an online interactive platform that offers free coding classes in 9 different programming languages."
+      };
+
+      links[2] = {
+        name: "W3",
+        logo: "http://www.w3.org/2008/site/images/logo-w3c-mobile-lg",
+        url: "http://www.w3.org/",
+        description: "The World Wide Web Consortium is the main international standards organization for the World Wide Web."
+      }
+
+      // Your code here
+      document.write( "<ul>" );
+
+for( var i = 0; i < links.length; i ++ ) {
+  document.write( "<li>" + "<p>W3Schools</p>" + "<img src=http://www.w3schools.com/images/w3schools.png>" + "</br>" + "<a href=http://www.w3schools.com/>http://www.w3schools.com/</a>" + "<p>W3Schools is a web developer information website, with tutorials and references relating to web development topics such as HTML, CSS, JavaScript and PHP.</p>" + "</li>" );
+}
+
+for( var i = 0; i < links.length; i ++ ) {
+  document.write( "<li>" + "<p>Code Academy</p>" + "<img src=Codecademy.png>" + "</br>" + "<a href=https://www.codecademy.com/>https://www.codecademy.com/</a>" + "<p>Codecademy is an online interactive platform that offers free coding classes in 9 different programming languages.</p>" + "</li>");
+
+}
+
+for( var i = 0; i < links.length; i ++ ) {
+  document.write( "<li>" + "<p>W3</p>" + "<img src=http://www.w3.org/2008/site/images/logo-w3c-mobile-lg>" + "</br>" + "<a href=http://www.w3.org/>http://www.w3.org/</a>" + "<p>The World Wide Web Consortium is the main international standards organization for the World Wide Web.</p>" + "</li>");
+}
+
+document.write( "</ul>" );
+console.log( links.length );
+
+
+
+    </script>
+  </body>
+</html>
